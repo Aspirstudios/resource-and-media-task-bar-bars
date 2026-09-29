@@ -1,4 +1,4 @@
-# Floating Media Bar
+# Taskbar Media Bar
 
 **A minimal, transparent, always-visible bar for Windows that shows the song or video currently playing and lets you control it without switching windows.**
 
