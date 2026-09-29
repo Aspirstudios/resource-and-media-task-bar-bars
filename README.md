@@ -10,8 +10,8 @@
 
 | Tool | Script | What it does |
 |------|--------|--------------|
-| **Media Bar** | `barra.py` | Shows what is playing and controls playback |
-| **Resource Bar** | `rendimiento.py` | Shows CPU, RAM and GPU usage |
+| **Media Bar** | `multimedia bar.py` | Shows what is playing and controls playback |
+| **Resource Bar** | `resource bar.py` | Shows CPU, RAM and GPU usage |
 
 Both share the same look and behavior: frameless, transparent background, always on top, horizontally draggable, position remembered between launches, and automatically hidden when a fullscreen window is active.
 
@@ -126,8 +126,8 @@ Tkinter is included with the standard Python installation for Windows.
 ## Run from source
 
 ```bash
-python barra.py
-python rendimiento.py
+python "multimedia bar.py"
+python "resource bar.py"
 ```
 
 ---
@@ -137,8 +137,8 @@ python rendimiento.py
 To generate a single executable with no console window:
 
 ```bash
-python -m PyInstaller --noconsole --onefile barra.py
-python -m PyInstaller --noconsole --onefile rendimiento.py
+python -m PyInstaller --noconsole --onefile "multimedia bar.py"
+python -m PyInstaller --noconsole --onefile "resource bar.py"
 ```
 
 The results appear in the `dist` folder.
@@ -146,13 +146,13 @@ The results appear in the `dist` folder.
 **Tip:** if something fails while building or running the `.exe`, build first **without** `--noconsole` to see the errors on screen:
 
 ```bash
-python -m PyInstaller --onefile barra.py
+python -m PyInstaller --onefile "multimedia bar.py"
 ```
 
 If the executable does not start because of missing modules, try hidden imports:
 
 ```bash
-python -m PyInstaller --noconsole --onefile --hidden-import win32timezone --hidden-import psutil barra.py
+python -m PyInstaller --noconsole --onefile --hidden-import win32timezone --hidden-import psutil "multimedia bar.py"
 ```
 
 ---
@@ -175,13 +175,13 @@ They are created next to the `.exe` (or next to the `.py` if run without compili
 
 At the top of each script there are constants you can tweak.
 
-**Media Bar** (`barra.py`):
+**Media Bar** (`multimedia bar.py`):
 
 ```python
 DESPLAZAMIENTO_X = 160
 ```
 
-**Resource Bar** (`rendimiento.py`):
+**Resource Bar** (`resource bar.py`):
 
 ```python
 DESPLAZAMIENTO_X = 620   # initial horizontal position
