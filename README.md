@@ -207,4 +207,4 @@ INTERVALO_GPU_S = 3      # GPU refresh (seconds)
 
 Want the full story behind this project, with screenshots and the development process? Read the write-up on Blogger:
 
-**[Read the blog post](https://YOUR-BLOG.blogspot.com/YYYY/MM/your-post.html)**
+**[Read the blog post](https://aspirstudios.blogspot.com/)**
