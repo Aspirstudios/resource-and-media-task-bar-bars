@@ -137,6 +137,5 @@ It is only the value for the **first run**. After that, the saved position takes
 
 ---
 
-## License
 
-Add the license of your choice here (for example, MIT).
+
